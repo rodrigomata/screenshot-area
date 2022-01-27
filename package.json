@@ -11,6 +11,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "jest --config jest.config.json"
   },
   "devDependencies": {
@@ -35,6 +36,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js}": ["yarn run lint"]
+    "*.{ts,js}": [
+      "yarn run lint",
+      "yarn run format"
+    ]
   }
 }
