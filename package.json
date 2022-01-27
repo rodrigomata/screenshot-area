@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
     "test": "jest --config jest.config.json"
   },
   "devDependencies": {
@@ -28,7 +29,12 @@
   "bugs": {
     "url": "https://github.com/rodrigomata/screenshot-area/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{ts,js}": ["tslint -p tsconfig.json"]
+    "*.{ts,js}": ["yarn run lint"]
   }
 }
