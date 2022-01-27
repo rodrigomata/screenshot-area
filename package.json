@@ -12,7 +12,8 @@
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write",
-    "test": "jest --config jest.config.json"
+    "test": "jest --config jest.config.json",
+    "postinstall": "npx simple-git-hooks"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
