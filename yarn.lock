@@ -286,6 +286,18 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@commitlint/config-angular-type-enum@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-16.0.0.tgz#a1e136fa380499fb39ca64be138fc41d6e54dbbd"
+  integrity sha512-6Gn/Wh7tFiVHUK+bxiVMUZg6X7N6ArJLgaH39/23qK3/PkC0Y4FSJZf63YIS+EA/n5USHaBgBV88iduSTJU9rQ==
+
+"@commitlint/config-angular@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-16.0.0.tgz#a66a90e3b80778e50de39e8a2623129cc7274da3"
+  integrity sha512-UmH3D/BjqhIueM29w9G8mR8wHI0ncUrNFqX6OgDhsIgLS1Sgf6L3ad+oasTWfJ+KjKl544cjoayyWY0eX3wrIg==
+  dependencies:
+    "@commitlint/config-angular-type-enum" "^16.0.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"

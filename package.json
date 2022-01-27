@@ -15,6 +15,7 @@
     "test": "jest --config jest.config.json"
   },
   "devDependencies": {
+    "@commitlint/config-angular": "^16.0.0",
     "@types/jest": "^27.4.0",
     "husky": "4.3.8",
     "jest": "^27.4.7",
