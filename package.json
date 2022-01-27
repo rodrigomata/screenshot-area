@@ -34,7 +34,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "npx commitlint"
+    "commit-msg": "commitlint"
   },
   "lint-staged": {
     "*.{ts,js}": [
