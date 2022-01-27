@@ -34,12 +34,15 @@
   },
   "simple-git-hooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -e"
+    "commit-msg": "commitlint"
   },
   "lint-staged": {
     "*.{ts,js}": [
       "yarn run lint",
       "yarn run format"
     ]
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
   }
 }
