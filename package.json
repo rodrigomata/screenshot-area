@@ -15,9 +15,9 @@
     "test": "jest --config jest.config.json"
   },
   "devDependencies": {
-    "@commitlint/config-angular": "^16.0.0",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@types/jest": "^27.4.0",
-    "commitlint": "^16.1.0",
     "jest": "^27.4.7",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
