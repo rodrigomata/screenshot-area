@@ -33,8 +33,7 @@
     "url": "https://github.com/rodrigomata/screenshot-area/issues"
   },
   "simple-git-hooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint --edit $1"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{ts,js}": [
