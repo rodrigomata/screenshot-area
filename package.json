@@ -1,0 +1,34 @@
+{
+  "name": "screenshot-area",
+  "version": "1.0.0",
+  "description": "Lightweight JS library that takes screenshot from selected area",
+  "main": "dist/index.js",
+  "author": "royestone <rodrigo.mata.ib@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jest.config.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  },
+  "repository": "git@github.com:rodrigomata/screenshot-area.git",
+  "homepage": "https://github.com/rodrigomata/screenshot-area#readme",
+  "bugs": {
+    "url": "https://github.com/rodrigomata/screenshot-area/issues"
+  },
+  "lint-staged": {
+    "*.{ts,js}": ["tslint -p tsconfig.json"]
+  }
+}
