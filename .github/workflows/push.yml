@@ -28,7 +28,7 @@ jobs:
 
   release:
     name: Uses Semantic Release
-    needs: [tests]
+    needs: [test]
     runs-on: ubuntu-latest
     strategy:
       matrix:
