@@ -10,17 +10,21 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build-tsc": "tsc",
+    "build-browser": "esbuild ./src --bundle --minify --outfile=dist/screenshot-area.min.js",
+    "build": "yarn run build-tsc && yarn run build-browser",
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write",
     "test": "jest --config jest.config.json",
     "semantic-release": "semantic-release",
+    "prepublish": "yarn run build",
     "postinstall": "npx simple-git-hooks"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/jest": "^27.4.0",
+    "esbuild": "^0.14.14",
     "jest": "^27.4.7",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
@@ -39,6 +43,11 @@
   "keywords": [],
   "publishConfig": {
     "access": "public",
+    "branches": [
+      "main"
+    ]
+  },
+  "release": {
     "branches": [
       "main"
     ]
