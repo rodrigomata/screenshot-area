@@ -5,8 +5,7 @@ export function test2() {
   let x = 1
   x = 3
   a = x + 6
-  // tslint:disable-next-line
-  console.log('something')
+  console.log('something', a)
 }
 
 test2()

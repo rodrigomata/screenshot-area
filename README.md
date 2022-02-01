@@ -1,6 +1,5 @@
 # Screenshot Area
 
-
 ## Overview
 
 ## Table of contents
@@ -12,4 +11,5 @@
 ## Contributors
 
 ## License
+
 MIT
