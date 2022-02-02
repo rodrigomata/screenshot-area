@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build-tsc": "tsc",
-    "build-browser": "esbuild ./src --bundle --minify --outfile=dist/screenshot-area.min.js",
+    "build-browser": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/screenshot-area.min.esm.js",
     "build": "yarn run build-tsc && yarn run build-browser",
     "lint": "eslint --fix .",
     "format": "prettier --write .",

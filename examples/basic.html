@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic document</title>
-
-    <script src="../dist/screenshot-area.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,5 +22,11 @@
       voluptate delectus itaque in id accusamus porro, voluptates et possimus voluptatum natus. Quas
       aliquam aut quibusdam doloremque doloribus.
     </div>
+    <script type="module">
+      import { ScreenshotArea } from '../dist/screenshot-area.min.esm.js'
+      console.log('test 4');
+      const a = new ScreenshotArea();
+      console.log('a', a);
+    </script>
   </body>
 </html>
